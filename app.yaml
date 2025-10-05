@@ -8,3 +8,7 @@ handlers:
 
   - url: /assets
     static_dir: dist/assets
+
+  - url: /(.*\.(gif|png|jpg|jpeg|svg))$
+    static_files: dist/\1
+    upload: dist/(.*\.(gif|png|jpg|jpeg|svg))$
