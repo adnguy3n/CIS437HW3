@@ -1,6 +1,9 @@
 runtime: nodejs22
 service: default
 
+automatic_scaling:
+  min_instances: 1
+
 handlers:
   - url: /
     static_files: dist/index.html
